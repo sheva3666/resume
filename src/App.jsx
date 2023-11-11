@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import "./App.css";
 import Header from "./components/Header";
+import SocialMedias from "./components/SocialMedias";
 
 const image1 =
   "https://rare-gallery.com/thumbs/110214-lake-4k-hd-wallpaper-sea-water-waterfall-rocks-mountain-sun-clouds-sky-forest-nature.jpg";
@@ -64,6 +65,7 @@ function App() {
         <div className="bg" style={{ backgroundImage: `url(${image3}` }} />
         <h1>Nice, right?</h1>
       </section>
+      <SocialMedias />
     </>
   );
 }

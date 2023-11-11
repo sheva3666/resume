@@ -1,0 +1,12 @@
+.social-medias {
+  position: fixed;
+  left: 0;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 10px;
+  background: #ffffff;
+  opacity: 0.6;
+  border-radius: 10px;
+}
