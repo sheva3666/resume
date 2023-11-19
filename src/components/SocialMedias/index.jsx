@@ -8,16 +8,16 @@ const SocialMedias = () => {
   return (
     <div className="social-medias">
       <a href="https://instagram.com/ivancheii">
-        <img src={Instagram} alt="instagram" />
+        <img className="social-medias__link" src={Instagram} alt="instagram" />
       </a>
       <a href="https://t.me/ivancheii">
-        <img src={Telegram} alt="telegram" />
+        <img className="social-medias__link" src={Telegram} alt="telegram" />
       </a>
       <a href="https://www.linkedin.com/in/ivan-shevchenko-767499233/">
-        <img src={Linkedin} alt="linkedin" />
+        <img className="social-medias__link" src={Linkedin} alt="linkedin" />
       </a>
       <a href="mailto:ivan.shevchenko.dev@gmail.com">
-        <img src={Email} alt="email" />
+        <img className="social-medias__link" src={Email} alt="email" />
       </a>
     </div>
   );

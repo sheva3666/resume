@@ -4,13 +4,10 @@ import { ScrollTrigger } from "gsap/all";
 import "./App.css";
 import Header from "./components/Header";
 import SocialMedias from "./components/SocialMedias";
-
-const image1 =
-  "https://rare-gallery.com/thumbs/110214-lake-4k-hd-wallpaper-sea-water-waterfall-rocks-mountain-sun-clouds-sky-forest-nature.jpg";
-const image2 =
-  "https://rare-gallery.com/thumbs/5409247-mountain-mountain-hill-hillside-hill-lake-mountain-lake-hike-top-view-landscape-nature-fjord-horizon-view-from-top-of-the-mountain-cloudy-sunray-road-cloud-water-river-sky-lake-hill-png-images.jpg";
-const image3 =
-  "https://rare-gallery.com/thumbs/5413062-water-lake-tree-hill-forest-sky-nature-landscape-hill-side-hillside-blue-sky-lake-side-summer-summer-landscape-rural-paisaje-free-pictures.jpg";
+import Footer from "./components/Footer";
+import ImageOne from "./assets/imgOne.png";
+import ImageTwo from "./assets/imgTwo.png";
+import Review from "./components/Review";
 
 function App() {
   const firstSection = useRef(null);
@@ -54,17 +51,18 @@ function App() {
         thirdSection={thirdSection}
       />
       <section ref={firstSection}>
-        <div className="bg" style={{ backgroundImage: `url(${image1}` }} />
-        <h1>Parallax</h1>
+        <div className="bg" style={{ backgroundImage: `url(${ImageOne}` }} />
+        <Review />
       </section>
       <section ref={secondSection}>
-        <div className="bg" style={{ backgroundImage: `url(${image2}` }} />
+        <div className="bg" style={{ backgroundImage: `url(${ImageTwo}` }} />
         <h1>So smooth</h1>
       </section>
       <section ref={thirdSection}>
-        <div className="bg" style={{ backgroundImage: `url(${image3}` }} />
+        <div className="bg" style={{ backgroundImage: `url(${ImageOne}` }} />
         <h1>Nice, right?</h1>
       </section>
+      <Footer />
       <SocialMedias />
     </>
   );
