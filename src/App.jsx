@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import ImageOne from "./assets/imgOne.png";
 import ImageTwo from "./assets/imgTwo.png";
 import Review from "./components/Review";
+import AboutSection from "./components/AboutSection";
 
 function App() {
   const firstSection = useRef(null);
@@ -56,7 +57,7 @@ function App() {
       </section>
       <section ref={secondSection}>
         <div className="bg" style={{ backgroundImage: `url(${ImageTwo}` }} />
-        <h1>So smooth</h1>
+        <AboutSection />
       </section>
       <section ref={thirdSection}>
         <div className="bg" style={{ backgroundImage: `url(${ImageOne}` }} />

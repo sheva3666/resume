@@ -1,0 +1,9 @@
+.about-section {
+  color: #fff;
+  text-align: center;
+}
+
+.about-section__content {
+  display: flex;
+  justify-content: space-between;
+}

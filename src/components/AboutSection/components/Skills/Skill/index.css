@@ -1,0 +1,8 @@
+.skill {
+  padding: 10px;
+  border-radius: 5px;
+  flex-grow: 1;
+  flex-basis: 200;
+  background: #ffffffa1;
+  color: #000;
+}

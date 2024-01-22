@@ -2,14 +2,9 @@
   padding: 0px 50px;
   color: #fff;
   text-align: center;
-  font-size: 24px;
 }
 
 .review__title {
   font-size: 90px;
   margin-top: 0;
-}
-
-.review__text-description {
-  max-width: 920px;
 }
