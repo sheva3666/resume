@@ -11,7 +11,6 @@ import Review from "./components/Review";
 import AboutSection from "./components/AboutSection";
 
 function App() {
-  const firstSection = useRef(null);
   const secondSection = useRef(null);
   const thirdSection = useRef(null);
   const { innerHeight } = window;
@@ -46,12 +45,8 @@ function App() {
 
   return (
     <>
-      <Header
-        firstSection={firstSection}
-        secondSection={secondSection}
-        thirdSection={thirdSection}
-      />
-      <section ref={firstSection}>
+      <Header secondSection={secondSection} thirdSection={thirdSection} />
+      <section>
         <div className="bg" style={{ backgroundImage: `url(${ImageOne}` }} />
         <Review />
       </section>
