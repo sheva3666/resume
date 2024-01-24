@@ -6,15 +6,13 @@ const text = [
   "Experience: I have been with SAP Signavio for nearly two years, specializing in products related to Process Mining. Throughout this journey, I have primarily focused on React and GraphQL on the front-end, complemented by my proficiency in Kotlin and Java on the back-end.",
 ];
 
-const About = () => {
-  return (
-    <div className="about">
-      <h2>About</h2>
-      {text.map((text) => (
-        <p key={text}>{text}</p>
-      ))}
-    </div>
-  );
-};
+const About = () => (
+  <div className="about">
+    <h2>About</h2>
+    {text.map((text) => (
+      <p key={text}>{text}</p>
+    ))}
+  </div>
+);
 
 export default About;

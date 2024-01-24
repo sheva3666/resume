@@ -9,17 +9,15 @@ const text = {
   email: "Email: sheva3666@gmail.com",
 };
 
-const ContactsSection = () => {
-  return (
-    <div className="contacts-section">
-      <TitleOne title={text.title} />
-      <div className="contacts-section__content">
-        <Text maxwidth={960}>{text.location}</Text>
-        <Text maxwidth={960}>{text.phoneNumber}</Text>
-        <Text maxwidth={960}>{text.email}</Text>
-      </div>
+const ContactsSection = () => (
+  <div className="contacts-section">
+    <TitleOne title={text.title} />
+    <div className="contacts-section__content">
+      <Text maxwidth={960}>{text.location}</Text>
+      <Text maxwidth={960}>{text.phoneNumber}</Text>
+      <Text maxwidth={960}>{text.email}</Text>
     </div>
-  );
-};
+  </div>
+);
 
 export default ContactsSection;
