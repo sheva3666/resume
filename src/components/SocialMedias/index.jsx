@@ -4,23 +4,37 @@ import Linkedin from "../../assets/linkedin.png";
 import Email from "../../assets/mail.png";
 import "./index.css";
 
-const SocialMedias = () => {
-  return (
-    <div className="social-medias">
-      <a href="https://instagram.com/ivancheii">
-        <img className="social-medias__link" src={Instagram} alt="instagram" />
+const medias = [
+  {
+    href: "https://instagram.com/ivancheii",
+    icon: Instagram,
+    alt: "Instagram",
+  },
+  {
+    href: "mailto:ivan.shevchenko.dev@gmail.com",
+    icon: Telegram,
+    alt: "Telegram",
+  },
+  {
+    href: "https://www.linkedin.com/in/ivan-shevchenko-767499233/",
+    icon: Linkedin,
+    alt: "Linkedin",
+  },
+  {
+    href: "mailto:ivan.shevchenko.dev@gmail.com",
+    icon: Email,
+    alt: "Email",
+  },
+];
+
+const SocialMedias = () => (
+  <div className="social-medias">
+    {medias.map(({ href, icon, alt }) => (
+      <a key={alt} href={href}>
+        <img className="social-medias__link" src={icon} alt={alt} />
       </a>
-      <a href="https://t.me/ivancheii">
-        <img className="social-medias__link" src={Telegram} alt="telegram" />
-      </a>
-      <a href="https://www.linkedin.com/in/ivan-shevchenko-767499233/">
-        <img className="social-medias__link" src={Linkedin} alt="linkedin" />
-      </a>
-      <a href="mailto:ivan.shevchenko.dev@gmail.com">
-        <img className="social-medias__link" src={Email} alt="email" />
-      </a>
-    </div>
-  );
-};
+    ))}
+  </div>
+);
 
 export default SocialMedias;

@@ -10,6 +10,7 @@ import ImageTwo from "./assets/imgTwo.png";
 import Review from "./components/Review";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
+import ContactsSection from "./components/ContactsSection ";
 
 function App() {
   const secondSection = useRef(null);
@@ -67,7 +68,7 @@ function App() {
       </section>
       <section ref={forthSection}>
         <div className="bg" style={{ backgroundImage: `url(${ImageTwo}` }} />
-        <h1>Nice, right?</h1>
+        <ContactsSection />
       </section>
       <Footer />
       <SocialMedias />

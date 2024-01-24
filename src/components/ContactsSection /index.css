@@ -1,0 +1,14 @@
+.contacts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.contacts-section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
