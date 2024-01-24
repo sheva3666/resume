@@ -9,10 +9,13 @@ import ImageOne from "./assets/imgOne.png";
 import ImageTwo from "./assets/imgTwo.png";
 import Review from "./components/Review";
 import AboutSection from "./components/AboutSection";
+import ProjectsSection from "./components/ProjectsSection";
 
 function App() {
   const secondSection = useRef(null);
   const thirdSection = useRef(null);
+  const forthSection = useRef(null);
+
   const { innerHeight } = window;
 
   const getRatio = (el) => innerHeight / (innerHeight + el.offsetHeight);
@@ -45,7 +48,11 @@ function App() {
 
   return (
     <>
-      <Header secondSection={secondSection} thirdSection={thirdSection} />
+      <Header
+        secondSection={secondSection}
+        thirdSection={thirdSection}
+        forthSection={forthSection}
+      />
       <section>
         <div className="bg" style={{ backgroundImage: `url(${ImageOne}` }} />
         <Review />
@@ -56,6 +63,10 @@ function App() {
       </section>
       <section ref={thirdSection}>
         <div className="bg" style={{ backgroundImage: `url(${ImageOne}` }} />
+        <ProjectsSection />
+      </section>
+      <section ref={forthSection}>
+        <div className="bg" style={{ backgroundImage: `url(${ImageTwo}` }} />
         <h1>Nice, right?</h1>
       </section>
       <Footer />

@@ -1,0 +1,13 @@
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.projects-section__content {
+  display: flex;
+  justify-content: space-between;
+}

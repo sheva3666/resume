@@ -2,13 +2,29 @@
 import Photo from "../../assets/photo.png";
 import "./index.css";
 
-const Header = ({ secondSection, thirdSection }) => {
+const Header = ({ secondSection, thirdSection, forthSection }) => {
+  const links = [
+    {
+      name: "About",
+      relatedSection: secondSection,
+    },
+    {
+      name: "Projects",
+      relatedSection: thirdSection,
+    },
+    {
+      name: "Contacts",
+      relatedSection: forthSection,
+    },
+  ];
+
   const onNavClick = (ref) => {
     window.scrollTo({
       top: ref?.current?.offsetTop,
       behavior: "smooth",
     });
   };
+
   return (
     <div className="header">
       <div className="header__logo">
@@ -16,18 +32,15 @@ const Header = ({ secondSection, thirdSection }) => {
         <h2>Ivan Shevchenko</h2>
       </div>
       <div className="header__nav">
-        <div
-          onClick={() => onNavClick(secondSection)}
-          className="header__nav-link"
-        >
-          About
-        </div>
-        <div
-          onClick={() => onNavClick(thirdSection)}
-          className="header__nav-link"
-        >
-          Contacts
-        </div>
+        {links.map(({ name, relatedSection }) => (
+          <div
+            key={name}
+            onClick={() => onNavClick(relatedSection)}
+            className="header__nav-link"
+          >
+            {name}
+          </div>
+        ))}
       </div>
     </div>
   );
