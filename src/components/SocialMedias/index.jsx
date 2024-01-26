@@ -30,7 +30,7 @@ const medias = [
 const SocialMedias = () => (
   <div className="social-medias">
     {medias.map(({ href, icon, alt }) => (
-      <a key={alt} href={href}>
+      <a className="social-medias__link" key={alt} href={href}>
         <img className="social-medias__link" src={icon} alt={alt} />
       </a>
     ))}
