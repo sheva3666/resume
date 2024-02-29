@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     env:
-      SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+      SURGE_LOGIN: ${{ secrets.SURGE_DOMAIN }}
       SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
     runs-on: ubuntu-latest
     steps:
