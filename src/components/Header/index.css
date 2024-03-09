@@ -24,3 +24,13 @@
   cursor: pointer;
   text-transform: uppercase;
 }
+
+@media only screen and (max-width: 600px) {
+  .header__logo-name {
+    display: none;
+  }
+
+  .header__nav-link {
+    font-size: 13px;
+  }
+}

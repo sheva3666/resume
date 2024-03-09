@@ -29,7 +29,7 @@ const Header = ({ secondSection, thirdSection, forthSection }) => {
     <div className="header">
       <div className="header__logo">
         <img className="header__logo-img" src={Photo} alt="" />
-        <h2>Ivan Shevchenko</h2>
+        <h2 className="header__logo-name">Ivan Shevchenko</h2>
       </div>
       <div className="header__nav">
         {links.map(({ name, relatedSection }) => (
