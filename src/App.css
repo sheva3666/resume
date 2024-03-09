@@ -39,9 +39,3 @@ h1 {
   font-size: 3em;
   font-weight: 400;
 }
-
-@media only screen and (max-width: 600px) {
-  .section {
-    padding: 200px;
-  }
-}
