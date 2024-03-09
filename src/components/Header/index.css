@@ -33,4 +33,11 @@
   .header__nav-link {
     font-size: 13px;
   }
+
+  .header__nav {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
 }
