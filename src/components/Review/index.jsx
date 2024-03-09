@@ -4,7 +4,7 @@ import "./index.css";
 
 const text = {
   name: "I’m Shevchenko Ivan",
-  title: "Frontend Developer",
+  title: "Full Stack Developer",
   description:
     "I would like to become a part of a friendly and professional team, in a moment I would develop my skills in the field of research and development, in order to achieve team results.",
 };

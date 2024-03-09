@@ -6,3 +6,10 @@
   background: #ffffffa1;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .link {
+    padding: 5px 20px;
+    border-radius: 20px;
+  }
+}

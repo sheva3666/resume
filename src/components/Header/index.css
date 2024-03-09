@@ -39,5 +39,8 @@
   gap: 20px;
   cursor: pointer;
   text-transform: uppercase;
-}
+  }
+  .header {
+  padding: 10px 30px;
+  }
 }

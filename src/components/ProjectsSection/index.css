@@ -9,11 +9,10 @@
 
 .projects-section__content {
   display: flex;
-  justify-content: space-between;
 }
 
 @media only screen and (max-width: 600px) {
   .projects-section {
-          padding: 0 20px;
+    padding: 0 20px;
   }
 }
